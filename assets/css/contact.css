@@ -1,0 +1,25 @@
+.btn-submit {
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 10px;
+    padding: 6px;
+    width: 50%;
+    margin-left: 150px;
+    
+}
+
+.text-input {
+    background-color: white;
+    width: 100%;
+    border-color: white;
+    padding: 3px;
+    box-shadow: 0px 1px 0px 0px #BFC9CA ;
+    margin-bottom: 20px;
+} 
+body{
+    background-color: #CACFD2   ;
+}

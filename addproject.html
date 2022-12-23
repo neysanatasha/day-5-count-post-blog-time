@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profil Page</title>
+    <link rel="stylesheet" href="assets/css/project.css">
+</head>
+<body>
+    <!-- Start Navbar -->
+    <div class="container-nav">
+        <nav>
+            <ul>
+                <li><img src="assets/img/logo.png" alt="logo" class="logo"></li>
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="addproject.html">My Project</a></li>
+            </ul>
+            <a href="contact.html" class="btn-contact">Contact Me</a>
+        </nav>
+    </div>
+    <!-- End Navbar -->
+    <div class="container-projek">
+        <form onsubmit="addData(event)">
+        <h1 class="title-projek">ADD MY PROJECT</h1>
+            <!-- Project Name -->
+            <div class="projek space">
+                <label for="">Project Name</label>
+                <input type="text" id="input-title">
+            </div>
+            <!-- Start Date && End Date -->
+            <div class="date space">
+                <div class="card-date">
+                    <label for="">Start Date</label>
+                    <input type="date" id="start-date">
+                </div>
+                <div class="card-date">
+                    <label for="">End Date</label>
+                    <input type="date" id="end-date">
+                </div>
+            </div>
+            <!-- Description -->
+            <div class="description space">
+                <label for="">Description</label>
+                <textarea name="" id="input-content"></textarea>
+            </div>
+            <!-- checkbox -->
+            <div class="checkbox space">
+                <label for="">Technologies</label>
+                <div class="container-checkbox">
+                    <div class="card-checkbox">
+                        <input type="checkbox" id="nodeJs">
+                        <label for="" class="name-card-checkbox">Node Js</label>
+                    </div>
+                    <div class="card-checkbox">
+                        <input type="checkbox" id="javascript">
+                        <label for="" class="name-card-checkbox">JavaScript</label>
+                    </div>
+                    <div class="card-checkbox">
+                        <input type="checkbox" id="reactJs">
+                        <label for="" class="name-card-checkbox">React Js</label>
+                    </div>
+                    <div class="card-checkbox">
+                        <input type="checkbox" id="typeScript">
+                        <label for="" class="name-card-checkbox">TypeScript</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Upload Image -->
+            <div class="upload space">
+                <label for="">Upload Image</label>
+                <input type="file" id="input-upload">
+            </div>
+            <button class="button-profil" type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="container-myproject">
+        <h1 class="title-myproject">MY PROJECT</h1>
+        <div id="content" class="content-myproject">
+        </div>
+    <div>
+</div>
+<script src="assets/js/addproject.js"></script>
+</body>
+</html>
